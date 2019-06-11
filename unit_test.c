@@ -8,9 +8,6 @@
  */
 #include "preprocessorSettings.h"
 
-
-
-
 #include "unit_test.h"
 #include <stdio.h>
 #include <stdint.h>
@@ -39,7 +36,6 @@ uint32_t run_unit_test (void) {
 }
 
 uint32_t run_platforn_independent_unit_test (void) {
-    // explore_types ();
 
 #if DEPLOY_FIFO_NODE_TEST
     g_ut_status = test_fifo_node ();
@@ -239,17 +235,6 @@ uint32_t test_fifo_node_case5 (void) {
 }
 #endif /*DEPLOY_FIFO_NODE_TEST*/
 
-
-
-
-#if DEPLOY_FIFO_NODE_TEST
-uint32_t test_fifo_node_case6 (void) {
-   
-
-    return UT_OK;
-}
-#endif /*DEPLOY_FIFO_NODE_TEST*/
- 
 
  
 
